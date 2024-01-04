@@ -1,4 +1,4 @@
---Creacion de un bloque anonimo.
+--Creacion de un bloque anonimo
 SET SERVEROUTPUT ON
 DECLARE
     l_name VARCHAR2(100);
