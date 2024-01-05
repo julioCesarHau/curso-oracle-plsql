@@ -11,3 +11,13 @@ BEGIN
 END;
 /
 --  ** Ejemplo2 **
+SET SERVEROUTPUT ON
+DECLARE
+    l_nombre VARCHAR2(25) := 'Julio Cesar';
+BEGIN
+    DBMS_OUTPUT.put_line('Mi nombre es: '||l_nombre); --Imprime vacio ya que la variable no tiene asignado un resultado
+    l_nombre := 'Joaquin de Jesus';
+    DBMS_OUTPUT.put_line('Mi nombre es: '||l_nombre); --imprime el nombre que se le asgino en la variable l_nombre
+    
+    /* Aunque la variable esta inicializada en la seccion de declaracion, Siempre tomara el resultado de la ultima asignacion*/
+END;
